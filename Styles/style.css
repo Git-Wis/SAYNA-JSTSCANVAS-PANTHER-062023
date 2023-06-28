@@ -1,0 +1,287 @@
+@font-face {
+    font-family: Panthera;
+    src: url("../Police/PantheraRegular-MVZ9J.ttf");
+}
+
+@font-face {
+    font-family: Beyno;
+    src: url("../Police/BEYNO.ttf");
+}
+
+@font-face {
+    font-family: Wakanda-forever;
+    src: url("../Police/Wakanda.ttf");
+}
+
+@font-face {
+    font-family: CantareB;
+    src: url("../Police/Cantarell-Bold.ttf");
+}
+
+@font-face {
+    font-family: CantareR;
+    src: url("../Police/Cantarell-Regular.ttf");
+}
+
+*{
+    font-family: CantareR;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background:radial-gradient(126.67% 350.28% at -21.35%
+0%, #11213F 0%, #0B0B0B 39.1%, rgba(2, 23, 64,
+0.837641) 94.57%, rgba(2, 23, 64, 0) 100%) ;
+    color: white;
+}
+
+nav {
+    margin: 0 5px;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+ ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 35%;
+ }
+
+ ul li {
+    list-style: none;
+ }
+
+nav h2>a {
+    text-decoration: none;
+    color: white;
+}
+
+nav h2:hover {
+    text-decoration: underline;
+}
+/*les barres vertical*/
+
+.barre{
+    margin-top: -150px;
+    position: absolute;
+    display: flex;
+  }
+  .barre .vertical_full{
+    width: 4px;
+    height: 370px;
+    background-color:#9e91b7;
+  }
+  .barre .vertical_min{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    align-items: center;
+  }
+  .barre .vertical_min .barre_min{
+    width: 4px;
+    height: 200px;
+    background-color:#9e91b7;
+  
+  }
+  .barre .vertical_min .social_media{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+  }
+  .barre .vertical_min .social_media img{
+    margin-top: 21px;
+    cursor: pointer;
+  }
+  .barre .vertical_min .social_media img:hover{
+    filter: sepia(100%) invert(100%) brightness(1000%);
+  }
+
+
+/*CSS du page D'accueil*/
+
+h1 {
+    font-family: Panthera;
+    font-size: 68px;
+    color: #9E91B7;
+}
+
+h2 {
+    font-family: Beyno;
+    font-size: 32px;
+    color: #9E91B7;
+}
+
+.vp {
+    text-decoration: underline;
+}
+
+.part1 {
+    margin: 100px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.part2 {
+    height: 270px;
+    margin: 0 0 20px 70px ;
+    background-color: #021740;
+    display: flex;
+}
+
+.img1 {
+    margin: -10px  0 0 20px;
+}
+
+.text1 {
+    padding: 5px;
+    text-align: justify;
+    font-size: 14px;
+}
+
+.container {
+    margin: 0 150px;
+    padding: 20px;
+    display: flex;
+}
+
+.txt {
+    margin: 10px;
+    padding: 20px;
+    text-align: justify;
+}
+
+.txt>h2 {
+    padding: 10px 0;
+}
+
+.txt p {
+    padding: 5px;
+}
+
+.card {
+    height: 658px;
+    width: 368px;
+    margin: 300px 20px;
+    color: black;
+    background-color: #F2CEF2;
+    border-radius: 10px;
+    
+    
+}
+
+.crd-img>img{
+    margin: -200px 0 30px 30px;
+}
+
+.crd-container {
+    padding: 20px;
+}
+
+.crd-container>h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.container1 {
+    height: 620px;
+    background: url("../illustrations/Accueil/Pantherhome7.png");
+    background-size: 100%;
+}
+
+.formulaire {
+    margin: 50px 300px;
+    height: 420px;
+    border-radius: 150px;
+    background: linear-gradient(to bottom ,#FFFFFF,#9e91b75b);
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #0B0B0B;
+}
+
+form p ,from h2,button{
+    margin: 5px;
+    padding: 5px;
+}
+
+input ,.mess{
+    margin: 5px;
+    padding: 10px;
+    width: 350px;
+    background: none;
+    border: 1px solid black;
+    border-radius: 38px;
+}
+
+.mess {
+    height:150px;
+}
+
+form button {
+    width: 174px;
+    height: 54px;
+    border-radius: 38px;
+    background-color: #F2CEF2;
+}
+form button:hover{
+    box-shadow: 5px 5px 5px 5px  #F2CEF2;
+    /*filter: blur(20px);*/
+}
+
+footer {
+    margin-top: 90px;
+    height: 492px;
+    background: url("../illustrations/back_footer.png");
+}
+
+.footer {
+    margin-left: 150px;
+    margin-right: 150px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ft-img {
+    height: 50%;
+}
+
+.ft-suite {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.row1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/*CSS du page Wakanda*/
+
+.container2{
+    height: 720px;
+    background: url("../illustrations/Wakanda/Pantherwakanda1.png");
+    background-size: 100%;
+}
+
+.vid {
+    height: 458 px;
+    background-color: #fff;
+}
+
+/*CSS du page Enigme*/
