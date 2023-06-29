@@ -41,18 +41,26 @@ let curentSlide = 0
 function startSlide(){
     let NbSlide
     //verifiaction la limite du tableau de slide 
-    if(NbSlide < 0){
-        NbSlide = (slide.length - 1)
-    }else if(NbSlide >= slide.length){
-        NbSlide = 0
+    if(curentSlide < 0){
+        curentSlide = (slide.length - 1)
+    }else if(curentSlide >= slide.length){
+        curentSlide = 0
     }
+
+    slide[curentSlide].classList.remove("active")
+    slide[curentSlide].classList.remove("selected")
+    slide[curentSlide+1].classList.add('selected')
+    slide[curentSlide + 2].classList.remove('slide0')
+    slide[curentSlide + 3].classList.add('active')
+    slide[curentSlide + 3].classList.add('slide0')
+
+    curentSlide++
+    console.log(curentSlide)
 
     
 }
 
-next.addEventListener('click',()=>{
-
-})
+next.addEventListener('click',startSlide)
 
 //animation de l'hover d'un image
 const hoverImgElement = document.querySelector(".imgHoverStart")
