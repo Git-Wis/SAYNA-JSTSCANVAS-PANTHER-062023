@@ -33,6 +33,27 @@ function fadeLeft(){
 
 });
 
+//section slide 
+
+const next = document.querySelector('.next')
+const slide = document.querySelectorAll('.slide')
+let curentSlide = 0
+function startSlide(){
+    let NbSlide
+    //verifiaction la limite du tableau de slide 
+    if(NbSlide < 0){
+        NbSlide = (slide.length - 1)
+    }else if(NbSlide >= slide.length){
+        NbSlide = 0
+    }
+
+    
+}
+
+next.addEventListener('click',()=>{
+
+})
+
 //animation de l'hover d'un image
 const hoverImgElement = document.querySelector(".imgHoverStart")
 

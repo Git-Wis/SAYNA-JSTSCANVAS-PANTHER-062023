@@ -127,15 +127,57 @@ h2 {
     flex-direction: row;
     justify-content: space-around;
 }
-
+ /*section slide*/
 .part2 {
-    height: 270px;
+    height: 250px;
     margin: 0 0 20px 70px ;
     background-color: #021740;
     display: flex;
+    overflow: hidden;
 }
 
-.img1 {
+.next {
+    position: absolute;
+    background-color: #021740;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    right: 20px;
+    top: 910px;
+    cursor: pointer;
+    
+}
+
+.next:hover{
+    width: 37px;
+    height: 37px;
+}
+
+.next p {
+    text-align: center;
+    font-size: 20px;
+}
+
+.active {
+    display: flex;
+    transform: translateX(0);
+
+}
+
+.slide{
+    flex-shrink: 0;
+    width: calc(100%/2.5);
+    transition: transform 0.3s ease;
+}
+
+.slide0 .text1{
+    display: none;
+}
+
+.selected>.img1 {
     margin: -10px  0 0 20px;
 }
 
@@ -290,30 +332,83 @@ form button:hover{
     /*filter: blur(20px);*/
 }
 
-footer {
-    margin-top: 90px;
-    height: 492px;
-    background: url("../illustrations/back_footer.png");
+/*design du footer*/
+footer{
+    height: 450px;
+    background-image: url('../illustrations/back_footer.png');
+    /* background: var(--background-footer); */
+    margin-top: 100px;
 }
-
-.footer {
-    margin-left: 150px;
-    margin-right: 150px;
-    padding: 50px;
+footer .container{
     display: flex;
-    justify-content: space-between;
+    padding-top: 100px;
 }
-
-.ft-img {
-    height: 50%;
-}
-
-.ft-suite {
+footer .footer-text-container{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    text-align: center;
+    padding-left: 115px;
 }
+footer .footer-text {
+    display: flex;
+    margin-bottom: 120px;
+    width: 600px;
+}
+footer h3{
+    margin-bottom: 20px;
+}
+footer .footer-image img{
+    width: 220px;
+    height: auto;
+}
+footer .footer-image{
+    padding-left: 110px;
+}
+footer .footer-image .sxb{
+    background: none;
+    position: relative;
+    width: 104px;
+    top: 136px;
+    left: 50px;
+}
+footer .social img:hover,.footer-image:hover{
+    scale: 1.1;
+}
+footer .droit,ul{
+    display: flex;
+    align-items: center;
+}
+footer .droit ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .social{
+    display: flex;
+    align-items: center;
+}
+footer .social img{
+    padding: 7px;
+    border-radius: 100%;
+    width: 33px;
+    margin-right: 30px;
+}
+footer .social-container{
+    margin-left: 150px;
+}
+/* footer .fb{
+    background-color: var(--light-pink-color);
+}
+footer .ig{
+    background-color: var(--pink-color);
+}
+footer .tw{
+    background-color: var(--violet-color);
+}
+footer .tk{
+    background-color: var(--blue-color);
+} */
+
+
 
 .row1 {
     display: flex;
@@ -382,12 +477,37 @@ footer {
 }
 
 /*CSS du page Wakanda*/
-
 .container2{
-    height: 720px;
-    background: url("../illustrations/Wakanda/Pantherwakanda1.png");
-    background-size: 100%;
+    margin: -50px 0 0 -80px;
+    padding: 0;
+    height: 858px;
+    background: url("../illustrations/Wakanda/Pantherwakanda1.png" )no-repeat;
+    background-size:cover;
 }
+
+.row-waka {
+    display: flex;
+    padding: 250px 0 0 150px;
+}
+
+.row-waka .col{
+    flex: 1;
+}
+
+.container-wakanda {
+    margin: 0 50px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-wakanda .row{
+    padding:50px;
+    flex: 1;
+}
+
+
+
 
 .vid {
     height: 458 px;
