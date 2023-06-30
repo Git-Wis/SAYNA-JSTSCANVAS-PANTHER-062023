@@ -121,11 +121,21 @@ h2 {
 }
 
 .part1 {
-    margin: 100px;
-    padding: 20px;
+    margin: 80px 80px 20px 80px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+.part1 .col {
+    flex: 1;
+}
+
+
+.part1>.img{
+   margin-top: -70px; 
+    
+    
 }
  /*section slide*/
 .part2 {
