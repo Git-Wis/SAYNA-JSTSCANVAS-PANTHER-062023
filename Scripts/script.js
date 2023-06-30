@@ -97,9 +97,10 @@ formBtn.addEventListener('click',()=>{
         console.log("Null")
     }else{
         //dans le cas ou tout a ete remplit 
-        Popup.style.display = "block"
+        Popup.style.display = "flex"
         document.querySelector('form').reset()
     }
+    console.log('test')
 })
 
 document.querySelector('.popup-btn .btn').addEventListener('click',()=>{
