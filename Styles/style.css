@@ -562,10 +562,9 @@ footer .tk{
 .cursor img{
     width: 32px;
     opacity: 0.5;
-    z-index: index;
 }
 
-*:hover{
+a,input,textarea,button,img{
     position: relative;
     z-index: 2;
 }
