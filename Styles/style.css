@@ -542,8 +542,7 @@ footer .tk{
 
 
 .vid {
-    height: 458 px;
-    background-color: #fff;
+    margin: 20px 0;
 }
 
 /*CSS du page Enigme*/
@@ -553,4 +552,20 @@ footer .tk{
 
 .okoye_section .col{
     flex: 1;
+}
+
+.cursor{
+    position:fixed;
+    z-index: 1;
+}
+
+.cursor img{
+    width: 32px;
+    opacity: 0.5;
+    z-index: index;
+}
+
+*:hover{
+    position: relative;
+    z-index: 2;
 }
